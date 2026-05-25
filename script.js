@@ -51,10 +51,10 @@ document
         `;
 
       // 5. Tambahkan tombol Download SKL hanya jika siswa dinyatakan LULUS
-      if (data.status.toUpperCase() === "LULUS") {
-        htmlHasil += `
+      if (data.status.toUpperCase() === 'LULUS') {
+            htmlHasil += `
                 <a href="${BASE_URL}/api/download-skl/${data.sklId}" 
-                   style="display: block; width: 100%; padding: 12px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 1rem; margin-top: 10px; transition: 0.3s;"
+                   style="display: block; width: 100%; box-sizing: border-box; text-align: center; padding: 12px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 1rem; margin: 15px auto 0 auto; transition: 0.3s; font-weight: bold;"
                    onmouseover="this.style.backgroundColor='#218838'"
                    onmouseout="this.style.backgroundColor='#28a745'">
                    Download Surat Keterangan Lulus (SKL)
